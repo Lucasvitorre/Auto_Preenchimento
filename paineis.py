@@ -1,29 +1,42 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
+import time
 
 driver = webdriver.Chrome()
-#URL PARA ACESSO
+
 driver.get("https://loger.belgo.com.br/LOGER_WEB/painelPontoCarregamento.html")
 
-try:
-    wait= WebDriverWait(driver,120)
-    driver.implicitly_wait(10)
+#INSERÇÃO 
 
-#PROCURA E INCLUI O VALOR
-    #elem= driver.find_element(By.ID, "codCentro").send_keys("9064")
-    elem1=driver.find_element(By.NAME, "codPC").send_keys("08")
-    elem2=driver.find_element(By.NAME, "pageSize").send_keys("20")
-    elem3=driver.find_element(By.NAME, "pageSize2").send_keys("20")
-    elem4=driver.find_element(By.NAME, "refreshTime").send_keys("10")
+elemento = driver.find_element(By.NAME,"codCentro")
+elemento.clear()
+time.sleep(3)
+elemento.send_keys("9460")
 
-    #assert elem.__getattribute__("9064") == "9064"
-    assert elem1.__getattribute__("08") == "08"
-    assert elem2.__getattribute__("20") == "20"
-    assert elem3.__getattribute__("20") == "20"
-    assert elem4.__getattribute__("10") == "10"
+elemento1 = driver.find_element(By.NAME,"codPC")
+elemento1.clear()
+time.sleep(3)
+elemento1.send_keys("08")
 
-finally:
-    driver.quit()
+elemento2 = driver.find_element(By.NAME,"pageSize")
+elemento2.clear()
+time.sleep(3)
+elemento2.send_keys("20")
+
+elemento3 = driver.find_element(By.NAME,"pageSize2")
+elemento3.clear()
+time.sleep(3)
+elemento3.send_keys("20")
+
+elemento4 = driver.find_element(By.NAME,"refreshTime")
+elemento4.clear()
+time.sleep(3)
+elemento4.send_keys("10")
+
+elemento5 = driver.find_element(By.XPATH,'//*[@id="configuracao"]/table/tbody/tr/td/table/tbody/tr[10]/td/input')
+time.sleep(3)
+elemento5.click()
+
+delay = time.sleep(10000)
