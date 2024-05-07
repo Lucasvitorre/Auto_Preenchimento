@@ -34,7 +34,7 @@ elemento4.clear()
 time.sleep(2)
 elemento4.send_keys("10")
 
-elemento5 = driver.find_element(By.XPATH,'//*[@id="configuracao"]/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input[1]')
+elemento5 = driver.find_element(By.XPATH,'//*[@id="configuracao"]/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input[3]')
 time.sleep(2)
 elemento5.click()
 

@@ -17,7 +17,7 @@ elemento.send_keys("9460")
 elemento1 = driver.find_element(By.NAME,"codPC")
 elemento1.clear()
 time.sleep(2)
-elemento1.send_keys()
+elemento1.send_keys("08")
 
 elemento2 = driver.find_element(By.NAME,"pageSize")
 elemento2.clear()
