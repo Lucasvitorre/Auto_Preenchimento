@@ -34,10 +34,13 @@ elemento4.clear()
 time.sleep(2)
 elemento4.send_keys("10")
 
+
+
 elemento5 = driver.find_element(By.XPATH,'//*[@id="configuracao"]/table/tbody/tr/td/table/tbody/tr[10]/td/input')
 time.sleep(2)
 elemento5.click()
 
+driver.fullscreen_window()
 
 #DEIXANDO 24 HORAS ABERTA
 delay = time.sleep(86400)
