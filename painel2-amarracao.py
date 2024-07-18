@@ -5,7 +5,7 @@ import time
 
 driver = webdriver.Chrome()
 
-driver.get("https://loger.belgo.com.br/LOGER_WEB/painelPontoCarregamento.html")
+driver.get("")
 
 #INSERÇÃO DE INFORMAÇÕES
 

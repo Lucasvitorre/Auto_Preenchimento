@@ -5,41 +5,41 @@ import time
 
 driver = webdriver.Chrome()
 
-driver.get("https://loger.belgo.com.br/LOGER_WEB/painelPontoCarregamento.html")
+driver.get("")
 
 #INSERÇÃO DE INFORMAÇÕES
 
-elemento = driver.find_element(By.NAME,"codCentro")
+elemento = driver.find_element(By.NAME,"")
 elemento.clear()
 time.sleep(2)
 elemento.send_keys()
 
-elemento1 = driver.find_element(By.NAME,"codPC")
+elemento1 = driver.find_element(By.NAME,"")
 elemento1.clear()
 time.sleep(2)
 elemento1.send_keys()
 
-elemento2 = driver.find_element(By.NAME,"pageSize")
+elemento2 = driver.find_element(By.NAME,"")
 elemento2.clear()
 time.sleep(2)
 elemento2.send_keys()
 
-elemento3 = driver.find_element(By.NAME,"pageSize2")
+elemento3 = driver.find_element(By.NAME,"")
 elemento3.clear()
 time.sleep(2)
 elemento3.send_keys()
 
-elemento4 = driver.find_element(By.NAME,"refreshTime")
+elemento4 = driver.find_element(By.NAME,"")
 elemento4.clear()
 time.sleep(2)
 elemento4.send_keys()
 
-elemento5 = driver.find_element(By.XPATH,'//*[@id="configuracao"]/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input[1]')
+elemento5 = driver.find_element(By.XPATH,'')
 time.sleep(2)
 elemento5.click()
 
 
-elemento6 = driver.find_element(By.XPATH,'//*[@id="configuracao"]/table/tbody/tr/td/table/tbody/tr[10]/td/input')
+elemento6 = driver.find_element(By.XPATH,'')
 time.sleep(2)
 elemento6.click()
 
