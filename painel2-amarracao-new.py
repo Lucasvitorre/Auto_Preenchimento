@@ -8,7 +8,7 @@ from datetime import datetime
 
 driver = webdriver.Chrome()
 
-driver.get("https://loger.belgo.com.br/LOGER_WEB/painelVeiculosCarregando.html")
+driver.get("")
 
 def inserir_informacoes():
     try:
