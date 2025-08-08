@@ -3,7 +3,7 @@ import pandas as pd
 from time import sleep
 
 #importando os AA's
-aa= pd.read_csv(r"C:\Users\70159006\OneDrive - ArcelorMittal\Documentos\GitHub\Auto_Preenchimento\cadastro_maquinas.csv")
+aa= pd.read_csv(r"")
 print(aa)
 
 #Pausa Padrão
